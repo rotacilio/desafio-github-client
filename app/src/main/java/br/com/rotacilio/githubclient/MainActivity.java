@@ -2,10 +2,14 @@ package br.com.rotacilio.githubclient;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.widget.Toast;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
 
     @Override
     public void onItemClick(Object object) {
+        Log.e("aqui_error", "teste");
         ItemList itemList = (ItemList) object;
         Intent it = new Intent(MainActivity.this, PullRequestActivity_.class);
         it.putExtra("itemList", itemList);

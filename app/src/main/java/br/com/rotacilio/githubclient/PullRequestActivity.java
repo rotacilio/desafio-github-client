@@ -3,11 +3,14 @@ package br.com.rotacilio.githubclient;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -38,6 +41,7 @@ import br.com.rotacilio.githubclient.request.PullRequestRequest;
 public class PullRequestActivity extends AppCompatActivity implements RecyclerViewClick, CallbackRequest {
 
     private ItemList repo;
+//    private String repo;
 
     private RepositoryAdapter repositoryAdapter;
 
@@ -74,7 +78,8 @@ public class PullRequestActivity extends AppCompatActivity implements RecyclerVi
     @AfterViews
     void initPullRequest(){
         manager = new LinearLayoutManager(this);
-        repo = getIntent().getExtras().getParcelable("itemList");
+
+        repo = (ItemList) getIntent().getParcelableExtra("itemList");
 
         my_toolbar.setTitle(repo.getTitle());
         setSupportActionBar(my_toolbar);
