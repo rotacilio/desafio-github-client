@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/llField"
+        android:background="@color/fieldPullRequestColor"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|right"
+
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/closed"
+            android:layout_marginEnd="5dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvqtdClosed"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="000"
+            android:layout_marginRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:text="@string/closed"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pull_request"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:id="@+id/tvqtdOpen"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp" />
+
+        <TextView
+            android:text="@string/open"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llNoPullRequest"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivllNoPullRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_pull_request"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvRepository"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

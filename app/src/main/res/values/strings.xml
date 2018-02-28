@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Desafio Transire</string>
+    <string name="github">GitHub</string>
+    <string name="java_repository">Java Repository</string>
+    <string name="closed">Closed</string>
+    <string name="open">Open</string>
+    <string name="githubimage">GithubImage</string>
+    <string name="data">Data:</string>
+    <string name="semConexao">Sem acesso à Internet.</string>
+</resources>

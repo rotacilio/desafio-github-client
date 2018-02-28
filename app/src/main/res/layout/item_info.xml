@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="22dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="22dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:ellipsize="end"
+        android:minLines="1"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="AndroidDeveloper"
+        android:textColor="@color/titleColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:minLines="1"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="13dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+        android:textColor="@color/contentColor"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvContent"
+        android:layout_marginTop="27dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_circle_profile" />
+
+    <TextView
+        android:ellipsize="end"
+        android:minLines="1"
+        android:maxLines="1"
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivProfile"
+        android:layout_toEndOf="@+id/ivProfile"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:text="Alex Soares"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:minLines="1"
+        android:maxLines="1"
+        android:id="@+id/tvUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNome"
+        android:layout_toEndOf="@+id/ivProfile"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:layout_marginTop="3dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvForkDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvForkDate"
+        android:layout_alignBottom="@+id/tvForkDate"
+        android:layout_toLeftOf="@+id/tvForkDate"
+        android:layout_toStartOf="@+id/tvForkDate"
+        android:layout_marginRight="5dp"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="@string/data"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="5dp" />
+
+    <TextView
+        android:id="@+id/tvForkDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvNome"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="22/10/2017"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvStars"
+        android:layout_toLeftOf="@+id/tvStars"
+        android:layout_marginBottom="2dp"
+        android:layout_toStartOf="@+id/tvStars"
+        app:srcCompat="@drawable/star"
+        android:layout_marginRight="3dp"
+        android:layout_marginEnd="3dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvFork"
+        android:layout_toLeftOf="@+id/ivFork"
+        android:layout_toStartOf="@+id/ivFork"
+        android:text="00"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivFork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvFork"
+        android:layout_toLeftOf="@+id/tvFork"
+        android:layout_toStartOf="@+id/tvFork"
+        app:srcCompat="@drawable/repo_forked"
+        android:layout_marginRight="3dp"
+        android:layout_marginEnd="3dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvFork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivProfile"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="00"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24292E</color>
+    <color name="colorPrimaryDark">#15181b</color>
+    <color name="colorAccent">#4C4C4C</color>
+    <color name="titleColor">#0366D6</color>
+    <color name="contentColor">#586069</color>
+    <color name="fieldPullRequestColor">#E1E4E8</color>
+</resources>
