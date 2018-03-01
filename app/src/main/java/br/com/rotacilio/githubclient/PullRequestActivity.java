@@ -157,7 +157,7 @@ public class PullRequestActivity extends AppCompatActivity implements RecyclerVi
 
         progress = new ProgressDialog(this);
         progress.setTitle("Aguarde");
-        progress.setMessage("Carregando Pull requests...");
+        progress.setMessage("Buscando Pull Requests...");
         progress.setCancelable(false);
         progress.show();
 

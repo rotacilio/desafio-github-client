@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     public void retrieveData(){
         progress = new ProgressDialog(this);
         progress.setTitle("Aguarde");
-        progress.setMessage("Carregando repositorios...");
+        progress.setMessage("Buscando repositórios...");
         progress.setCancelable(false);
         progress.show();
 

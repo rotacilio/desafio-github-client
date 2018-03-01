@@ -19,7 +19,6 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:gravity="center|right"
-
         android:layout_height="?attr/actionBarSize">
 
         <ImageView

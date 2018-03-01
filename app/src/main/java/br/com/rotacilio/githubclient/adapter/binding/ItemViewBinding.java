@@ -59,8 +59,6 @@ public class ItemViewBinding extends RelativeLayout{
     @ViewById
     ImageView ivFork;
 
-
-
     public ItemViewBinding(Context context) {
         super(context);
     }
